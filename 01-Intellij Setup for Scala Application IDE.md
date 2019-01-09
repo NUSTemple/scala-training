@@ -38,10 +38,10 @@ If you do this inside Micron environment, please update your maven `settings.xml
 If project is created successfully, you should see below folder structure. 
 > ![01-Intellij-Setup-04](./img/01-Intellij-Setup-04.png)
 
-`.idea` folder is used by IDEA intellij only. it is not related to your project code
-`src` folder is used to store your functional code
-`test` folder is used to store your test code
-`pom.xml` is used for maven configuration. This file will use to download project dependency and also tell maven how to build your application. 
+- `.idea` folder is used by IDEA intellij only. it is not related to your project code
+- `src` folder is used to store your functional code
+- `test` folder is used to store your test code
+- `pom.xml` is used for maven configuration. This file will use to download project dependency and also tell maven how to build your application. 
 
 for simplicity, you can replace your `pom.xml` to this file https://github.com/NUSTemple/training/blob/master/templates/pom.xml. 
 
