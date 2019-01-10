@@ -105,3 +105,10 @@ Process finished with exit code 0
 
 ### Run this jar
 
+syntax is scala -classpath `your jar file path` `your_group_id.classname`
+
+
+```bash
+scala -classpath my-first-scala-app-1.0-SNAPSHOT.jar com.micron.f10ds.HelloWorld
+```
+![Run Scala Script](./img/02-Hello-World-07.png)
