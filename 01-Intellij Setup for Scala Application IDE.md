@@ -57,15 +57,15 @@ As a good habit, please always enable the version control of your repo.
 
 1. Install .ignore plugin. This plugin is __super__ useful when integration with Git. It will ignore unnecessary files and avoid to track by Git. If you do not install it yet, please install via menu, `File --> Settings --> Plugins`
 
-![01-Intellij-Setup-04](./img/01-Intellij-Setup-05.png)
+> ![01-Intellij-Setup-05](./img/01-Intellij-Setup-05.png)
 
 2. Enable Version Control
 
    - Even Micron Bitbucket, please choose Git also. Bitbucket is backended by Git also. 
 
-   ![01-Intellij-Setup-06](./img/01-Intellij-Setup-06.png)
+     > ![01-Intellij-Setup-06](./img/01-Intellij-Setup-06.png)
 
-![01-Intellij-Setup-06](./img/01-Intellij-Setup-07.png)
+     > ![01-Intellij-Setup-07](./img/01-Intellij-Setup-07.png)
 
 3. Configure `.gitignore` file 
 
@@ -87,10 +87,16 @@ As a good habit, please always enable the version control of your repo.
    ```
    - Option 2: use .ignore plugin and auto generate this file. 
 
-     ​    
+     create a new .ignore file and tick `Example user template` and `Scala` template. 
+
+     
+
+     > ![01-Intellij-Setup-08](./img/01-Intellij-Setup-08.png)
+
+     > ![01-Intellij-Setup-09](./img/01-Intellij-Setup-09.png)   
 
 ### Example Project Repo
 
-You can clone this repo and find all 
+You can clone <span style='color:blue'> [this repo](https://github.com/NUSTemple/myfirstscalaapp) </span> and find all example codes here. 
 
  
