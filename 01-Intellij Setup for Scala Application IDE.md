@@ -47,3 +47,50 @@ for simplicity, you can replace your `pom.xml` to this file https://github.com/N
 
 With this, you can start to code your first scala applications. 
 
+### README.md
+
+As a good habit, please always create a `README.md` file in your repo and indicate the purpose of this repo. This will help others to easily understand what this repo is about. For Github, it by default will display the content from `README.md`.
+
+### Git and .gitignore file
+
+As a good habit, please always enable the version control of your repo. 
+
+1. Install .ignore plugin. This plugin is __super__ useful when integration with Git. It will ignore unnecessary files and avoid to track by Git. If you do not install it yet, please install via menu, `File --> Settings --> Plugins`
+
+![01-Intellij-Setup-04](./img/01-Intellij-Setup-05.png)
+
+2. Enable Version Control
+
+   - Even Micron Bitbucket, please choose Git also. Bitbucket is backended by Git also. 
+
+   ![01-Intellij-Setup-06](./img/01-Intellij-Setup-06.png)
+
+![01-Intellij-Setup-06](./img/01-Intellij-Setup-07.png)
+
+3. Configure `.gitignore` file 
+
+   - Option 1: you can copy and paste below content into your `gitignore`
+
+   ```reStructuredText
+   # Created by .ignore support plugin (hsz.mobi)
+   ### Example user template
+   /target/
+   # IntelliJ project files
+   .idea
+   *.iml
+   out
+   gen
+   
+   ### Scala template
+   *.class
+   *.log
+   ```
+   - Option 2: use .ignore plugin and auto generate this file. 
+
+     ​    
+
+### Example Project Repo
+
+You can clone this repo and find all 
+
+ 
