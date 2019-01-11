@@ -45,7 +45,15 @@ If project is created successfully, you should see below folder structure.
 
 for simplicity, you can replace your `pom.xml` to this file https://github.com/NUSTemple/training/blob/master/templates/pom.xml. 
 
-With this, you can start to code your first scala applications. 
+### Add Scala Framework Support  
+
+Make sure you have enabled Scala framework support for this project.
+
+![01-Intellij-Setup-04](./img/01-Intellij-Setup-10.png)
+
+
+
+With this, you can start to code your first __Scala__ applications. 
 
 ### README.md
 
