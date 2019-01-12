@@ -99,9 +99,9 @@ Use Spark's ML-lib to utilize in-built machine learning capabilities of Spark.
     			.setFeaturesCol("features")
     			.setLabelCol("label")
     			.fitIntercept(true)
-    	         .setMaxIter(10)
-                 .setRegParam(0.3)
-                 .setElasticNetParam(0.8)
+    	        .setMaxIter(10)
+                .setRegParam(0.3)
+                .setElasticNetParam(0.8)
     
     // Fit the model
     val lrModel = lr.fit(trainingData)
@@ -128,7 +128,6 @@ Use Spark's ML-lib to utilize in-built machine learning capabilities of Spark.
     ```scala 
     import org.apache.spark.ml.evaluation.RegressionEvaluator
      val lr_evaluator = new RegressionEvaluator()
-                            .setMetricName("mse")
                             .setPredictionCol("prediction")
                             .setLabelCol("label")
     println("mse:" + regressionEvaluator.setMetricName("mse").evaluate(predDF))
