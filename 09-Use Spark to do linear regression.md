@@ -2,7 +2,7 @@
 
 Use Spark's ML-lib to utilize in-built machine learning capabilities of Spark.
 
-1. First step is to include ML-lib as a dependency in the pom.xml file. Use the following piece of code to include. Spark version being used here is Spark 2.3.
+1. First step is to include ML-lib as a dependency in the pom.xml file. Use the following piece of code to include Spark ML-lib. Spark version being used here is Spark 2.3.
 
 ```xml
 <dependency>
