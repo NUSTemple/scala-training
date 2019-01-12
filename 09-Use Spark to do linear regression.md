@@ -136,7 +136,5 @@ Use Spark's ML-lib to utilize in-built machine learning capabilities of Spark.
     println("mae:" + regressionEvaluator.setMetricName("mae").evaluate(predDF))
     ```
 
-Full linear regression script can be found 
-
-[here]: https://bitbucket.micron.com/bbdc/projects/FDS/repos/micapro_ttmy65d/browse/src/main/scala/com/micron/mica/LinearRegressionMICA.scala.
+Complete linear regression script can be found https://bitbucket.micron.com/bbdc/projects/FDS/repos/micapro_ttmy65d/browse/src/main/scala/com/micron/mica/LinearRegressionMICA.scala
 
