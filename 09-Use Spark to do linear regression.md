@@ -130,10 +130,10 @@ Use Spark's ML-lib to utilize in-built machine learning capabilities of Spark.
      val lr_evaluator = new RegressionEvaluator()
                             .setPredictionCol("prediction")
                             .setLabelCol("label")
-    println("mse:" + regressionEvaluator.setMetricName("mse").evaluate(predDF))
-    println("rmse:" + regressionEvaluator.setMetricName("rmse").evaluate(predDF))
-    println("mae:" + regressionEvaluator.setMetricName("mae").evaluate(predDF))
+    println("mse:" + lr_evaluator.setMetricName("mse").evaluate(predDF))
+    println("rmse:" + lr_evaluator.setMetricName("rmse").evaluate(predDF))
+    println("mae:" + lr_evaluator.setMetricName("mae").evaluate(predDF))
     ```
 
-Complete linear regression script can be found https://bitbucket.micron.com/bbdc/projects/FDS/repos/micapro_ttmy65d/browse/src/main/scala/com/micron/mica/LinearRegressionMICA.scala
+Complete linear regression script can be found at https://bitbucket.micron.com/bbdc/projects/FDS/repos/micapro_ttmy65d/browse/src/main/scala/com/micron/mica/LinearRegressionMICA.scala
 
