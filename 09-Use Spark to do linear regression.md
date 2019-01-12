@@ -1,4 +1,4 @@
-## Linear Regression with Scala / Spark
+## Linear Regression with Scala & Spark
 
 Use Spark's ML-lib to utilize in-built machine learning capabilities of Spark.
 
