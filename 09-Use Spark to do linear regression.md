@@ -2,7 +2,7 @@
 
 Use Spark's ML-lib to utilize in-built machine learning capabilities of Spark.
 
-1. First step is to include ML-lib as a dependency in the pom.xml file. Use the following piece of code to include Spark ML-lib. Spark version being used here is Spark 2.3.
+1. First step is to include ML-lib as a dependency in the pom.xml file. Use the following piece of code to include Spark ML-lib. Spark version being used here is Spark 2.3. Spark ML-lib version is chosen keeping in mind the compatibility with Scala 2.11.
 
 ```xml
 <dependency>
@@ -12,33 +12,34 @@ Use Spark's ML-lib to utilize in-built machine learning capabilities of Spark.
 </dependency>
 ```
 
-2. Next step is to create a Scala object file under *src/main/scala* directory. To do so, go to 'scala' folder, right click to access 'New' menu and select 'Scala Class' option to reach the dialog box as shown below.
+2. Next step is to go to your project in IntelliJ and create a Scala object file under *src/main/scala* directory. To do so, go to 'scala' folder, right click to access 'New' menu and select 'Scala Class' option to reach the dialog box as shown below.
 
 ![09-CreateScalaObject](./img/09-CreateScalaObject.PNG)
 
 3. Give it a meaningful name, select 'Object' as Kind and click OK. It creates a blank *LinearRegressionExample.scala* file with an Object created named *LinearRegressionExample.*
 
-4. Create another directory under your project structure named 'data' and download any desired dataset in that directory. Here USA_Housing.csv dataset has been used for illustration purpose.
+4. Create another directory under your project structure named 'data' and download any desired dataset in that directory. Here USA_Housing.csv dataset has been used.
 
-5. Next step is to import the following libraries by writing the following piece of code at the very beginning. 
+5. Next step is to import the necessary libraries by writing the following piece of code at the very beginning of LinearRegressionExample.scala. 
 
    ```scala
    import org.apache.spark.sql.{DataFrame, SparkSession}
    import org.apache.spark.ml.regression.LinearRegression
    import org.apache.spark.ml.evaluation.RegressionEvaluator
    import org.apache.log4j._
+   Logger.getLogger("org").setLevel(Level.ERROR)
    ```
 
-   SparkSession aids in creating a SparkSession. DataFrame library utilized Spark DataFrame API which is a named column abstraction on top of Spark RDD.
+   SparkSession aids in creating a SparkSession. DataFrame library utilizes Spark DataFrame API which is a named column abstraction on top of Spark RDD.
 
-   LinearRegression library is the main library for this example. RegressionEvaluator helps in evaluating how good the predictions are against the actual values using a pre-defined metrics such as *'mse', 'r2' or 'rmse'.*
+   LinearRegression library is from Spark ML-lib which implements Linear Regression algorithm. RegressionEvaluator helps in evaluating how good the predictions are against the actual values using a pre-defined metrics such as *'mse', 'r2' or 'rmse'.*
 
-   log4j library helps in suppressing unwanted warning and information from getting printed onto the console.
+   log4j library helps in suppressing unwanted warning and information from getting printed onto the console. Logger object of this library is being used for this purpose.
 
 6. Next step is to load the dataset. Use the following lines of code for creating a spark session and importing dataset.
 
    ```scala
-   Logger.getLogger("org").setLevel(Level.ERROR)
+   
    val spark = SparkSession.builder().appName("LinearRegressionAlgorithm")
      						.master("local").getOrCreate()
    val df: DataFrame = spark.read.option("header", "true").option("inferSchema", "true")
