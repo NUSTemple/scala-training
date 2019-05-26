@@ -1,6 +1,8 @@
-## This repo is to build training material for Scala/Spark 
+# This repo is to build training material for Scala/Spark 
 
-[01-Intellij Setup for Scala Application IDE] (./01-Intellij Setup for Scala Application IDE.md)
+
+
+## [01-Intellij Setup for Scala Application IDE](./01-Intellij-Setup-for-Scala-Application-IDE.md)
 
 - Software preparation
 - How to create a Maven project for Scala
