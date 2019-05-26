@@ -1,6 +1,6 @@
 ## This repo is to build training material for Scala/Spark 
 
-## 01-Intellij Setup for Scala Application IDE
+[01-Intellij Setup for Scala Application IDE] (./01-Intellij Setup for Scala Application IDE.md)
 
 - Software preparation
 - How to create a Maven project for Scala
@@ -12,6 +12,7 @@
 - How to run the jar file
 
 ## 03-Use Spark to read HDFS file
+- Read a 
 
 
 
@@ -28,7 +29,6 @@
 
 
 ## 07-Use Spark to read Hive
-
 
 
 ## 08-Use Spark to do linear regression
