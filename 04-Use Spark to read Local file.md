@@ -14,4 +14,3 @@ println("Number of Datapoints:"+df.count())
 println("Printing first 20 rows:")
 df.show()
 ```
-

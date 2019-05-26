@@ -26,3 +26,22 @@ object HelloWorld extends App with Logging {
 ｝
 
 ```
+
+Command to run:
+
+```bash
+
+spark-submit --master yarn --deploy-mode client  \
+--conf spark.eventLog.enabled=false \
+--class com.micron.f10ds.HelloWorld \
+my-first-scala-app-1.0-SNAPSHOT.jar
+```
+- `--deploy-mode` can be `client` or `cluster`. `client` mode will show 
+log in console directly but `cluster` mode will show in the WebUI. Log 
+for `cluster` mode can be view in Web UI as shown below
+
+> ![08-Spark-HDFS-01](./img/08-Spark-HDFS-01.png)
+
+> ![08-Spark-HDFS-02](./img/08-Spark-HDFS-02.png)
+
+> ![08-Spark-HDFS-03](./img/08-Spark-HDFS-03.png)
