@@ -116,3 +116,15 @@ WHERE csv_table.date_received <> 'Date received';
 
 ###
 
+```bash
+spark-shell --master yarn --jars /usr/hdp/current/hive_warehouse_connector/hive-warehouse-connector-assembly-1.0.0.3.1.0.0-78.jar
+```
+
+```scala
+import com.hortonworks.hwc.HiveWarehouseSession
+val hive = HiveWarehouseSession.session(spark).build()
+hive.showDatabases.show();
+hive.setDatabase("consumer_complaints");
+val df = hive.executeQuery("SELECT * FROM csv_table limit 10");
+df.show()
+```
