@@ -117,7 +117,8 @@ WHERE csv_table.date_received <> 'Date received';
 ###
 
 ```bash
-spark-shell --master yarn --jars /usr/hdp/current/hive_warehouse_connector/hive-warehouse-connector-assembly-1.0.0.3.1.0.0-78.jar
+spark-shell --master yarn --jars \
+/usr/hdp/current/hive_warehouse_connector/hive-warehouse-connector-assembly-1.0.0.3.1.0.0-78.jar
 ```
 or 
 
