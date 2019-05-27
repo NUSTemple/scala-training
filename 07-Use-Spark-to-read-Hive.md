@@ -127,7 +127,8 @@ spark-shell --master yarn \
 --jars /usr/hdp/3.0.1.0-183/hive_warehouse_connector/hive-warehouse-connector-assembly-1.0.0.3.0.1.0-183.jar \
 --conf spark.security.credentials.hiveserver2.enabled=false
 --conf spark.hadoop.hive.llap.daemon.service.hosts='<LLAP_APP_NAME>'
---conf spark.sql.hive.hiveserver2.jdbc.url='jdbc:hive2://<ZOOKEEPER_QUORUM>;serviceDiscoveryMode=zookeeper;zookeeperNamespace=hiveserver2-interactive'
+--conf spark.sql.hive.hiveserver2.jdbc.url=\
+'jdbc:hive2://<ZOOKEEPER_QUORUM>;serviceDiscoveryMode=zookeeper;zookeeperNamespace=hiveserver2-interactive'
 --conf spark.datasource.hive.warehouse.load.staging.dir='<STAGING_DIR>'
 --conf spark.datasource.hive.warehouse.metastoreUri='<METASTORE_URI>'
 --conf spark.hadoop.hive.zookeeper.quorum='<ZOOKEEPER_QUORUM>'
