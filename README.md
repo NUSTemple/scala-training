@@ -39,7 +39,7 @@
 
 
 ## [07-Use Spark to read Hive](07-Use-Spark-to-read-Hive.md)
-
+- Ingest csv data into Hive table
 
 ## [08-Use Spark to do linear regression](09-Use-Spark-to-do-linear-regression.md)
 
