@@ -138,6 +138,9 @@ spark-shell --master yarn \
 
 ###
 
+
+
+
 ```scala
 import com.hortonworks.hwc.HiveWarehouseSession
 val hive = HiveWarehouseSession.session(spark).build()
